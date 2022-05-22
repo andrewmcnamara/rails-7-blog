@@ -33,5 +33,6 @@ module Rails7Blog
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    config.active_record.encryption.store_key_references=true
   end
 end

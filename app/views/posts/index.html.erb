@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+<h1  class="font-bold text-4xl text-blue-500">Posts</h1>
+
+<div id="posts" class="">
+  <% @posts.each do |post| %>
+    <%= render post %>
+    <p>
+      <%= link_to "Show this post", post %>
+    </p>
+  <% end %>
+</div>
+
+
+<div class="flex justify-evenly w-auto">
+	<div class="item w-72 h-32 border-gray-600 border-2 rounded-lg transform transition duration-300 hover:scale-95">1</div>
+	<div class="item w-72 h-32 border-gray-600 border-2 rounded-lg transform transition duration-300 hover:scale-95">2</div>
+	<div class="item w-72 h-32 border-gray-600 border-2 rounded-lg transform transition duration-300 hover:scale-95">3</div>
+</div>
+
+<div class="border-2 border-gray-600 px-4 py-6 rounded-lg transform transition duration-500 hover:scale-95">
+
+Hkljsdflfdkjfldskl
+
+</div>
+
+<%= link_to "New post", new_post_path %>
